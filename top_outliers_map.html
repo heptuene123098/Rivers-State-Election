@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_85a0a0454695730d9d5be7e632fb6161 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_85a0a0454695730d9d5be7e632fb6161" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_85a0a0454695730d9d5be7e632fb6161 = L.map(
+                "map_85a0a0454695730d9d5be7e632fb6161",
+                {
+                    center: [9.082, 8.6753],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fc1eaaf278cce2a093467121d440d7bd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_fc1eaaf278cce2a093467121d440d7bd.addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var marker_edc7406b8057d6cd82396255e310421d = L.marker(
+                [4.828169, 6.981608],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_cace08e1a14c44351fc2fd28aa2fa11f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_edc7406b8057d6cd82396255e310421d.setIcon(icon_cace08e1a14c44351fc2fd28aa2fa11f);
+        
+    
+        var popup_4fafa11dbf938905e9d2d41cab8884d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e82fb95da0df4f856dd46bd9cd66641 = $(`<div id="html_5e82fb95da0df4f856dd46bd9cd66641" style="width: 100.0%; height: 100.0%;">APC Outlier: 32-15-09-010 (Score: 11.70672298)</div>`)[0];
+                popup_4fafa11dbf938905e9d2d41cab8884d1.setContent(html_5e82fb95da0df4f856dd46bd9cd66641);
+            
+        
+
+        marker_edc7406b8057d6cd82396255e310421d.bindPopup(popup_4fafa11dbf938905e9d2d41cab8884d1)
+        ;
+
+        
+    
+    
+            var marker_559878e575fac664b22a9c0fc79a5e6a = L.marker(
+                [4.828011, 6.98171],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_0e31e703b09bc9977b5ccd913196b67a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_559878e575fac664b22a9c0fc79a5e6a.setIcon(icon_0e31e703b09bc9977b5ccd913196b67a);
+        
+    
+        var popup_2fb4c45139fdb450412a5a197a204736 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a924aa174c5dd7689971a50f55626fe2 = $(`<div id="html_a924aa174c5dd7689971a50f55626fe2" style="width: 100.0%; height: 100.0%;">Closest Unit 1: RIVERS (Distance: 0.02 km)</div>`)[0];
+                popup_2fb4c45139fdb450412a5a197a204736.setContent(html_a924aa174c5dd7689971a50f55626fe2);
+            
+        
+
+        marker_559878e575fac664b22a9c0fc79a5e6a.bindPopup(popup_2fb4c45139fdb450412a5a197a204736)
+        ;
+
+        
+    
+    
+            var marker_80259a5a21ea4c7bf469f80afa55260c = L.marker(
+                [4.828011, 6.98171],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_5e6923d594b2199951e2a6c308a903bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_80259a5a21ea4c7bf469f80afa55260c.setIcon(icon_5e6923d594b2199951e2a6c308a903bf);
+        
+    
+        var popup_a1f35c0670287434be3b912a5e6d5e38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_243d1bb6bd9cdf78d8066e35a4f90b76 = $(`<div id="html_243d1bb6bd9cdf78d8066e35a4f90b76" style="width: 100.0%; height: 100.0%;">Closest Unit 2: RIVERS (Distance: 0.02 km)</div>`)[0];
+                popup_a1f35c0670287434be3b912a5e6d5e38.setContent(html_243d1bb6bd9cdf78d8066e35a4f90b76);
+            
+        
+
+        marker_80259a5a21ea4c7bf469f80afa55260c.bindPopup(popup_a1f35c0670287434be3b912a5e6d5e38)
+        ;
+
+        
+    
+    
+            var marker_55cf15717cd668e2c7e92f66cba689d3 = L.marker(
+                [4.827917, 6.981515],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_f1f067a8a486bf736edb7a63e9e78f72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55cf15717cd668e2c7e92f66cba689d3.setIcon(icon_f1f067a8a486bf736edb7a63e9e78f72);
+        
+    
+        var popup_1200b29b953c29fd4aefd73be44e34c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fd728a0d632341e0217d840df53c342 = $(`<div id="html_0fd728a0d632341e0217d840df53c342" style="width: 100.0%; height: 100.0%;">Closest Unit 3: RIVERS (Distance: 0.03 km)</div>`)[0];
+                popup_1200b29b953c29fd4aefd73be44e34c1.setContent(html_0fd728a0d632341e0217d840df53c342);
+            
+        
+
+        marker_55cf15717cd668e2c7e92f66cba689d3.bindPopup(popup_1200b29b953c29fd4aefd73be44e34c1)
+        ;
+
+        
+    
+    
+            var marker_0add908259d8b3dae1733f67e08a2094 = L.marker(
+                [4.886862, 7.12517],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_4860ac7ef3d94cda796f624844bd05a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0add908259d8b3dae1733f67e08a2094.setIcon(icon_4860ac7ef3d94cda796f624844bd05a5);
+        
+    
+        var popup_97b9236b94d81879f97615150048d535 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be66576e8b5aba28292b885fab2025f0 = $(`<div id="html_be66576e8b5aba28292b885fab2025f0" style="width: 100.0%; height: 100.0%;">APC Outlier: 32-21-10-007 (Score: 10.82084366)</div>`)[0];
+                popup_97b9236b94d81879f97615150048d535.setContent(html_be66576e8b5aba28292b885fab2025f0);
+            
+        
+
+        marker_0add908259d8b3dae1733f67e08a2094.bindPopup(popup_97b9236b94d81879f97615150048d535)
+        ;
+
+        
+    
+    
+            var marker_1155b8b2d7b2ea2ebd162cd9516e414d = L.marker(
+                [4.886244, 7.125491],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_7315c4463a043cdcda102454769bc760 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1155b8b2d7b2ea2ebd162cd9516e414d.setIcon(icon_7315c4463a043cdcda102454769bc760);
+        
+    
+        var popup_d07d8f27edeb48249544a35a1f62afd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb6ddd205cc6eaef5a9f42ac8207d7dd = $(`<div id="html_fb6ddd205cc6eaef5a9f42ac8207d7dd" style="width: 100.0%; height: 100.0%;">Closest Unit 1: RIVERS (Distance: 0.08 km)</div>`)[0];
+                popup_d07d8f27edeb48249544a35a1f62afd2.setContent(html_fb6ddd205cc6eaef5a9f42ac8207d7dd);
+            
+        
+
+        marker_1155b8b2d7b2ea2ebd162cd9516e414d.bindPopup(popup_d07d8f27edeb48249544a35a1f62afd2)
+        ;
+
+        
+    
+    
+            var marker_dfc159bef27e5bdd78d043cec3123d16 = L.marker(
+                [4.883556, 7.118789],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_3d56a8a514e1adbc9ae271cec222c38c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dfc159bef27e5bdd78d043cec3123d16.setIcon(icon_3d56a8a514e1adbc9ae271cec222c38c);
+        
+    
+        var popup_4456ca02420fef36f24777733472eebe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de5c52a682c3dde8a2e1a665ef45b7e4 = $(`<div id="html_de5c52a682c3dde8a2e1a665ef45b7e4" style="width: 100.0%; height: 100.0%;">Closest Unit 2: RIVERS (Distance: 0.80 km)</div>`)[0];
+                popup_4456ca02420fef36f24777733472eebe.setContent(html_de5c52a682c3dde8a2e1a665ef45b7e4);
+            
+        
+
+        marker_dfc159bef27e5bdd78d043cec3123d16.bindPopup(popup_4456ca02420fef36f24777733472eebe)
+        ;
+
+        
+    
+    
+            var marker_912ab488d56aa84938d32d6a182f8923 = L.marker(
+                [4.881335, 7.13161],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_e26b2ce8ad63de11f59730f01a4ab55a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_912ab488d56aa84938d32d6a182f8923.setIcon(icon_e26b2ce8ad63de11f59730f01a4ab55a);
+        
+    
+        var popup_2bf1125fa35efa05e11035d8c1532e1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfb1d047cee7fbf5721b850ac8bf7974 = $(`<div id="html_bfb1d047cee7fbf5721b850ac8bf7974" style="width: 100.0%; height: 100.0%;">Closest Unit 3: RIVERS (Distance: 0.94 km)</div>`)[0];
+                popup_2bf1125fa35efa05e11035d8c1532e1c.setContent(html_bfb1d047cee7fbf5721b850ac8bf7974);
+            
+        
+
+        marker_912ab488d56aa84938d32d6a182f8923.bindPopup(popup_2bf1125fa35efa05e11035d8c1532e1c)
+        ;
+
+        
+    
+    
+            var marker_53e136244331eef64e3463a937aa7b2a = L.marker(
+                [4.903751, 6.995358],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_1bee6bb62b9c72d5f8c58616b25a2794 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_53e136244331eef64e3463a937aa7b2a.setIcon(icon_1bee6bb62b9c72d5f8c58616b25a2794);
+        
+    
+        var popup_cb749714c81d53bc2af1af602d0e883c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54b07d0f59d54308c292c8692b73863c = $(`<div id="html_54b07d0f59d54308c292c8692b73863c" style="width: 100.0%; height: 100.0%;">APC Outlier: 32-15-14-006 (Score: 10.03270563)</div>`)[0];
+                popup_cb749714c81d53bc2af1af602d0e883c.setContent(html_54b07d0f59d54308c292c8692b73863c);
+            
+        
+
+        marker_53e136244331eef64e3463a937aa7b2a.bindPopup(popup_cb749714c81d53bc2af1af602d0e883c)
+        ;
+
+        
+    
+    
+            var marker_fbc63640ca98597022a3a78de3729f0f = L.marker(
+                [4.900267, 6.996579],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_f23ae33ad9682379d85e452145ce4151 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fbc63640ca98597022a3a78de3729f0f.setIcon(icon_f23ae33ad9682379d85e452145ce4151);
+        
+    
+        var popup_4624d3bf3638f7a2fe6a0dacdf1dbb66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6aa77a41acebd96c865b6a3e0d75993d = $(`<div id="html_6aa77a41acebd96c865b6a3e0d75993d" style="width: 100.0%; height: 100.0%;">Closest Unit 1: RIVERS (Distance: 0.41 km)</div>`)[0];
+                popup_4624d3bf3638f7a2fe6a0dacdf1dbb66.setContent(html_6aa77a41acebd96c865b6a3e0d75993d);
+            
+        
+
+        marker_fbc63640ca98597022a3a78de3729f0f.bindPopup(popup_4624d3bf3638f7a2fe6a0dacdf1dbb66)
+        ;
+
+        
+    
+    
+            var marker_2b0740edf1aca491deb68e366fdd59cb = L.marker(
+                [4.900267, 6.996579],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_34327a48bfdb85a87e51708f0b2f3a88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b0740edf1aca491deb68e366fdd59cb.setIcon(icon_34327a48bfdb85a87e51708f0b2f3a88);
+        
+    
+        var popup_074d5b0709123467e2a4f24d63444876 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40cd8c98f4d000f3dd234dc27adfac99 = $(`<div id="html_40cd8c98f4d000f3dd234dc27adfac99" style="width: 100.0%; height: 100.0%;">Closest Unit 2: RIVERS (Distance: 0.41 km)</div>`)[0];
+                popup_074d5b0709123467e2a4f24d63444876.setContent(html_40cd8c98f4d000f3dd234dc27adfac99);
+            
+        
+
+        marker_2b0740edf1aca491deb68e366fdd59cb.bindPopup(popup_074d5b0709123467e2a4f24d63444876)
+        ;
+
+        
+    
+    
+            var marker_25284a20eec08dad11c51b04230c5218 = L.marker(
+                [4.900267, 6.996579],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_2218fb63a3db878f6db79f889e035d6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_25284a20eec08dad11c51b04230c5218.setIcon(icon_2218fb63a3db878f6db79f889e035d6b);
+        
+    
+        var popup_b7f10b8800c4c4070e5351fd59dccf61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0efcaf84ee7c522de556a2d6193ef2cc = $(`<div id="html_0efcaf84ee7c522de556a2d6193ef2cc" style="width: 100.0%; height: 100.0%;">Closest Unit 3: RIVERS (Distance: 0.41 km)</div>`)[0];
+                popup_b7f10b8800c4c4070e5351fd59dccf61.setContent(html_0efcaf84ee7c522de556a2d6193ef2cc);
+            
+        
+
+        marker_25284a20eec08dad11c51b04230c5218.bindPopup(popup_b7f10b8800c4c4070e5351fd59dccf61)
+        ;
+
+        
+    
+    
+            var marker_679d03c9ac69ead1572daa4846778c20 = L.marker(
+                [5.068542, 6.535645],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_c9c5450dfd458a7f561cf6c2664eae52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_679d03c9ac69ead1572daa4846778c20.setIcon(icon_c9c5450dfd458a7f561cf6c2664eae52);
+        
+    
+        var popup_63782f4bed840f60d4f258277ad41293 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14d1c0b2dc653eb7ad7be7b7fb2bd089 = $(`<div id="html_14d1c0b2dc653eb7ad7be7b7fb2bd089" style="width: 100.0%; height: 100.0%;">LP Outlier: 32-03-02-011 (Score: 7.401737366)</div>`)[0];
+                popup_63782f4bed840f60d4f258277ad41293.setContent(html_14d1c0b2dc653eb7ad7be7b7fb2bd089);
+            
+        
+
+        marker_679d03c9ac69ead1572daa4846778c20.bindPopup(popup_63782f4bed840f60d4f258277ad41293)
+        ;
+
+        
+    
+    
+            var marker_0325aa8c501ec8ec5b57235de435b39b = L.marker(
+                [5.064583, 6.538949],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_811945917182bf364b232007192760f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0325aa8c501ec8ec5b57235de435b39b.setIcon(icon_811945917182bf364b232007192760f9);
+        
+    
+        var popup_5b7c0880202241ef629571abec9c64a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5c0ddc995d7a903c917e94813545996 = $(`<div id="html_e5c0ddc995d7a903c917e94813545996" style="width: 100.0%; height: 100.0%;">Closest Unit 1: RIVERS (Distance: 0.57 km)</div>`)[0];
+                popup_5b7c0880202241ef629571abec9c64a1.setContent(html_e5c0ddc995d7a903c917e94813545996);
+            
+        
+
+        marker_0325aa8c501ec8ec5b57235de435b39b.bindPopup(popup_5b7c0880202241ef629571abec9c64a1)
+        ;
+
+        
+    
+    
+            var marker_69db500ed41c2e0bb81aae7fd6c66066 = L.marker(
+                [5.064583, 6.538949],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_6b8cac2260b1af23c123101996f95c8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_69db500ed41c2e0bb81aae7fd6c66066.setIcon(icon_6b8cac2260b1af23c123101996f95c8f);
+        
+    
+        var popup_c826173cd4f7ecfe8d4f07cad4e392f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8f3873a95709f39ebda87cc376d6cb1 = $(`<div id="html_b8f3873a95709f39ebda87cc376d6cb1" style="width: 100.0%; height: 100.0%;">Closest Unit 2: RIVERS (Distance: 0.57 km)</div>`)[0];
+                popup_c826173cd4f7ecfe8d4f07cad4e392f1.setContent(html_b8f3873a95709f39ebda87cc376d6cb1);
+            
+        
+
+        marker_69db500ed41c2e0bb81aae7fd6c66066.bindPopup(popup_c826173cd4f7ecfe8d4f07cad4e392f1)
+        ;
+
+        
+    
+    
+            var marker_3e104f09592239c9cddf52c2d3842539 = L.marker(
+                [5.064583, 6.538949],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_010da707147144250f4bdecf21a08fe7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3e104f09592239c9cddf52c2d3842539.setIcon(icon_010da707147144250f4bdecf21a08fe7);
+        
+    
+        var popup_ad287a26ffcb9714b96e72f874505412 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40326707f13a7ffa8dc2a21938d97b1d = $(`<div id="html_40326707f13a7ffa8dc2a21938d97b1d" style="width: 100.0%; height: 100.0%;">Closest Unit 3: RIVERS (Distance: 0.57 km)</div>`)[0];
+                popup_ad287a26ffcb9714b96e72f874505412.setContent(html_40326707f13a7ffa8dc2a21938d97b1d);
+            
+        
+
+        marker_3e104f09592239c9cddf52c2d3842539.bindPopup(popup_ad287a26ffcb9714b96e72f874505412)
+        ;
+
+        
+    
+    
+            var marker_a9de53fd5e871ae6790ac9ed60d2e4fc = L.marker(
+                [4.61379, 6.663812],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_850ba58e46b1c80d68da006a9d530d37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a9de53fd5e871ae6790ac9ed60d2e4fc.setIcon(icon_850ba58e46b1c80d68da006a9d530d37);
+        
+    
+        var popup_efd5545ee5f9ebc2f828788b258c0ef8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb4b0a39d5bbd442a5b76c3a58c2759d = $(`<div id="html_fb4b0a39d5bbd442a5b76c3a58c2759d" style="width: 100.0%; height: 100.0%;">LP Outlier: 32-04-09-002 (Score: 7.11820458)</div>`)[0];
+                popup_efd5545ee5f9ebc2f828788b258c0ef8.setContent(html_fb4b0a39d5bbd442a5b76c3a58c2759d);
+            
+        
+
+        marker_a9de53fd5e871ae6790ac9ed60d2e4fc.bindPopup(popup_efd5545ee5f9ebc2f828788b258c0ef8)
+        ;
+
+        
+    
+    
+            var marker_08dbe0a4e4c46d3406e8a56f363a87b2 = L.marker(
+                [4.852189, 7.033989],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_e409d729069dae8243f893bac8753da8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_08dbe0a4e4c46d3406e8a56f363a87b2.setIcon(icon_e409d729069dae8243f893bac8753da8);
+        
+    
+        var popup_63c148e00a61b1e7946d80876093c6dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_364eaa151b3ad997ca718dc03fa4b153 = $(`<div id="html_364eaa151b3ad997ca718dc03fa4b153" style="width: 100.0%; height: 100.0%;">LP Outlier: 32-15-02-001 (Score: 6.146450875)</div>`)[0];
+                popup_63c148e00a61b1e7946d80876093c6dc.setContent(html_364eaa151b3ad997ca718dc03fa4b153);
+            
+        
+
+        marker_08dbe0a4e4c46d3406e8a56f363a87b2.bindPopup(popup_63c148e00a61b1e7946d80876093c6dc)
+        ;
+
+        
+    
+    
+            var marker_db57e1934f572249ea576c160c4ea972 = L.marker(
+                [4.849994, 7.036545],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_8904a81ed736ae3d8b473a4b8a7d21c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_db57e1934f572249ea576c160c4ea972.setIcon(icon_8904a81ed736ae3d8b473a4b8a7d21c7);
+        
+    
+        var popup_df6f493ae381fc7f04a217b38941f4ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99e4f7116ade61a777e8792c02b95915 = $(`<div id="html_99e4f7116ade61a777e8792c02b95915" style="width: 100.0%; height: 100.0%;">Closest Unit 1: RIVERS (Distance: 0.37 km)</div>`)[0];
+                popup_df6f493ae381fc7f04a217b38941f4ac.setContent(html_99e4f7116ade61a777e8792c02b95915);
+            
+        
+
+        marker_db57e1934f572249ea576c160c4ea972.bindPopup(popup_df6f493ae381fc7f04a217b38941f4ac)
+        ;
+
+        
+    
+    
+            var marker_df78227cf8e93d521ed08a5964d5db7a = L.marker(
+                [4.85291, 7.030632],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_1d34a33554298d0b89d7ce6ab09158fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_df78227cf8e93d521ed08a5964d5db7a.setIcon(icon_1d34a33554298d0b89d7ce6ab09158fc);
+        
+    
+        var popup_668a4eea090460cfbdc91581229a0a66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efc795d214e43a50641c94d1caea6b76 = $(`<div id="html_efc795d214e43a50641c94d1caea6b76" style="width: 100.0%; height: 100.0%;">Closest Unit 2: RIVERS (Distance: 0.38 km)</div>`)[0];
+                popup_668a4eea090460cfbdc91581229a0a66.setContent(html_efc795d214e43a50641c94d1caea6b76);
+            
+        
+
+        marker_df78227cf8e93d521ed08a5964d5db7a.bindPopup(popup_668a4eea090460cfbdc91581229a0a66)
+        ;
+
+        
+    
+    
+            var marker_cf23b9709c20d3230d87b4cdd895ca86 = L.marker(
+                [4.848095, 7.036215],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_0e77cbf49cb1f97bc46496f3a2124d19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cf23b9709c20d3230d87b4cdd895ca86.setIcon(icon_0e77cbf49cb1f97bc46496f3a2124d19);
+        
+    
+        var popup_36dd9c1a90762983e8c4d909cf2703e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_404e9d7287f108933dcdc522fdba7f37 = $(`<div id="html_404e9d7287f108933dcdc522fdba7f37" style="width: 100.0%; height: 100.0%;">Closest Unit 3: RIVERS (Distance: 0.52 km)</div>`)[0];
+                popup_36dd9c1a90762983e8c4d909cf2703e2.setContent(html_404e9d7287f108933dcdc522fdba7f37);
+            
+        
+
+        marker_cf23b9709c20d3230d87b4cdd895ca86.bindPopup(popup_36dd9c1a90762983e8c4d909cf2703e2)
+        ;
+
+        
+    
+    
+            var marker_c9dd74720487d0d2f53556bea09a4cb8 = L.marker(
+                [4.881499, 7.007722],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_7ec00cb14e0959dbc502ff31de87bdb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c9dd74720487d0d2f53556bea09a4cb8.setIcon(icon_7ec00cb14e0959dbc502ff31de87bdb3);
+        
+    
+        var popup_a15a2f697fff63d5c2584dde85f25bfd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ab2dadaada56e1e559420d082754e29 = $(`<div id="html_4ab2dadaada56e1e559420d082754e29" style="width: 100.0%; height: 100.0%;">PDP Outlier: 32-15-06-025 (Score: 17.89121585)</div>`)[0];
+                popup_a15a2f697fff63d5c2584dde85f25bfd.setContent(html_4ab2dadaada56e1e559420d082754e29);
+            
+        
+
+        marker_c9dd74720487d0d2f53556bea09a4cb8.bindPopup(popup_a15a2f697fff63d5c2584dde85f25bfd)
+        ;
+
+        
+    
+    
+            var marker_7eb5a99ffc8ab59509a592099c18515b = L.marker(
+                [4.877232, 7.006938],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_408228af58940b967753c6e4555f6897 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7eb5a99ffc8ab59509a592099c18515b.setIcon(icon_408228af58940b967753c6e4555f6897);
+        
+    
+        var popup_3e0728058463a834e39966fc8bf37ce1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35b96aac99468dda7a561b6938c72c1b = $(`<div id="html_35b96aac99468dda7a561b6938c72c1b" style="width: 100.0%; height: 100.0%;">Closest Unit 1: RIVERS (Distance: 0.48 km)</div>`)[0];
+                popup_3e0728058463a834e39966fc8bf37ce1.setContent(html_35b96aac99468dda7a561b6938c72c1b);
+            
+        
+
+        marker_7eb5a99ffc8ab59509a592099c18515b.bindPopup(popup_3e0728058463a834e39966fc8bf37ce1)
+        ;
+
+        
+    
+    
+            var marker_30f367e07f8e2a3fd7b20d34c853566a = L.marker(
+                [4.875178, 7.005789],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_a9e04f38e38997f7e9f44cf27f928a9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_30f367e07f8e2a3fd7b20d34c853566a.setIcon(icon_a9e04f38e38997f7e9f44cf27f928a9d);
+        
+    
+        var popup_f32ad2df61777d1346fc22b1548b5b18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8e21b58ff1f920a860a434141020bfb = $(`<div id="html_e8e21b58ff1f920a860a434141020bfb" style="width: 100.0%; height: 100.0%;">Closest Unit 2: RIVERS (Distance: 0.73 km)</div>`)[0];
+                popup_f32ad2df61777d1346fc22b1548b5b18.setContent(html_e8e21b58ff1f920a860a434141020bfb);
+            
+        
+
+        marker_30f367e07f8e2a3fd7b20d34c853566a.bindPopup(popup_f32ad2df61777d1346fc22b1548b5b18)
+        ;
+
+        
+    
+    
+            var marker_c7649ef8c9f1db7a96e5f414dd4bf6b5 = L.marker(
+                [4.875178, 7.005789],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_d8b673677791b190050684678d6dbdd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c7649ef8c9f1db7a96e5f414dd4bf6b5.setIcon(icon_d8b673677791b190050684678d6dbdd8);
+        
+    
+        var popup_102c87013da712c03ae728747cadc4d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50129f483d42f17c1edc5131a0301299 = $(`<div id="html_50129f483d42f17c1edc5131a0301299" style="width: 100.0%; height: 100.0%;">Closest Unit 3: RIVERS (Distance: 0.73 km)</div>`)[0];
+                popup_102c87013da712c03ae728747cadc4d8.setContent(html_50129f483d42f17c1edc5131a0301299);
+            
+        
+
+        marker_c7649ef8c9f1db7a96e5f414dd4bf6b5.bindPopup(popup_102c87013da712c03ae728747cadc4d8)
+        ;
+
+        
+    
+    
+            var marker_b76838d5e0206762c8acfbe72d2208fe = L.marker(
+                [4.839553, 6.984844],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_5a09c7f12443147c3b83ea18f745fca1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b76838d5e0206762c8acfbe72d2208fe.setIcon(icon_5a09c7f12443147c3b83ea18f745fca1);
+        
+    
+        var popup_06371d5fee74dc7895e7fc8d1542207c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b31a99a04e255192f04fe6cd4dc2a1e = $(`<div id="html_4b31a99a04e255192f04fe6cd4dc2a1e" style="width: 100.0%; height: 100.0%;">PDP Outlier: 32-15-10-013 (Score: 14.86950291)</div>`)[0];
+                popup_06371d5fee74dc7895e7fc8d1542207c.setContent(html_4b31a99a04e255192f04fe6cd4dc2a1e);
+            
+        
+
+        marker_b76838d5e0206762c8acfbe72d2208fe.bindPopup(popup_06371d5fee74dc7895e7fc8d1542207c)
+        ;
+
+        
+    
+    
+            var marker_0a001d309d763150b3fe8fc0979f5d76 = L.marker(
+                [4.834455, 6.986332],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_6baac576c5c808bf5e2a9f1a1995e93d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a001d309d763150b3fe8fc0979f5d76.setIcon(icon_6baac576c5c808bf5e2a9f1a1995e93d);
+        
+    
+        var popup_20c08277ecf97412dcf377dba47bb83a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f7c179875df13bd8067e841a092006d = $(`<div id="html_2f7c179875df13bd8067e841a092006d" style="width: 100.0%; height: 100.0%;">Closest Unit 1: RIVERS (Distance: 0.59 km)</div>`)[0];
+                popup_20c08277ecf97412dcf377dba47bb83a.setContent(html_2f7c179875df13bd8067e841a092006d);
+            
+        
+
+        marker_0a001d309d763150b3fe8fc0979f5d76.bindPopup(popup_20c08277ecf97412dcf377dba47bb83a)
+        ;
+
+        
+    
+    
+            var marker_deab45c8cff170b5ca968db67895276e = L.marker(
+                [4.844621, 6.986688],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_ccf1c76419648d046ff34ac0b5950e88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_deab45c8cff170b5ca968db67895276e.setIcon(icon_ccf1c76419648d046ff34ac0b5950e88);
+        
+    
+        var popup_8594cf2e5e249e203ec3443b2f49b4d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2df936687212fe183c8bffc1a92ce4f5 = $(`<div id="html_2df936687212fe183c8bffc1a92ce4f5" style="width: 100.0%; height: 100.0%;">Closest Unit 2: RIVERS (Distance: 0.60 km)</div>`)[0];
+                popup_8594cf2e5e249e203ec3443b2f49b4d5.setContent(html_2df936687212fe183c8bffc1a92ce4f5);
+            
+        
+
+        marker_deab45c8cff170b5ca968db67895276e.bindPopup(popup_8594cf2e5e249e203ec3443b2f49b4d5)
+        ;
+
+        
+    
+    
+            var marker_f5201d1fec54870078468c76732c1e06 = L.marker(
+                [4.833789, 6.983463],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_7bafa0cfe61b64fb15e693d8cc7afaf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f5201d1fec54870078468c76732c1e06.setIcon(icon_7bafa0cfe61b64fb15e693d8cc7afaf0);
+        
+    
+        var popup_40e1d4d8a35c925f7601343d197d3423 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccf4a1b9eccd168a9dace3e4916f8e5f = $(`<div id="html_ccf4a1b9eccd168a9dace3e4916f8e5f" style="width: 100.0%; height: 100.0%;">Closest Unit 3: RIVERS (Distance: 0.66 km)</div>`)[0];
+                popup_40e1d4d8a35c925f7601343d197d3423.setContent(html_ccf4a1b9eccd168a9dace3e4916f8e5f);
+            
+        
+
+        marker_f5201d1fec54870078468c76732c1e06.bindPopup(popup_40e1d4d8a35c925f7601343d197d3423)
+        ;
+
+        
+    
+    
+            var marker_35bd426fe317404fe102c856020351cc = L.marker(
+                [4.81333, 6.957069],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_cdd486676e102c4e423e11d0472da041 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_35bd426fe317404fe102c856020351cc.setIcon(icon_cdd486676e102c4e423e11d0472da041);
+        
+    
+        var popup_e1274011346831de4fe7777e1c414918 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c22cc74d55162da6ba779b3e481b0083 = $(`<div id="html_c22cc74d55162da6ba779b3e481b0083" style="width: 100.0%; height: 100.0%;">PDP Outlier: 32-15-17-051 (Score: 14.64287444)</div>`)[0];
+                popup_e1274011346831de4fe7777e1c414918.setContent(html_c22cc74d55162da6ba779b3e481b0083);
+            
+        
+
+        marker_35bd426fe317404fe102c856020351cc.bindPopup(popup_e1274011346831de4fe7777e1c414918)
+        ;
+
+        
+    
+    
+            var marker_12c2e742f5306142f1aa21694e4bf4c7 = L.marker(
+                [4.813982, 6.955521],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_977f4df36bb29ad0536bf00ef1d50732 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_12c2e742f5306142f1aa21694e4bf4c7.setIcon(icon_977f4df36bb29ad0536bf00ef1d50732);
+        
+    
+        var popup_5e38ada291124b7a0c97774370aabc75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e13e02134ad97ad94219beb73ee5752 = $(`<div id="html_0e13e02134ad97ad94219beb73ee5752" style="width: 100.0%; height: 100.0%;">Closest Unit 1: RIVERS (Distance: 0.19 km)</div>`)[0];
+                popup_5e38ada291124b7a0c97774370aabc75.setContent(html_0e13e02134ad97ad94219beb73ee5752);
+            
+        
+
+        marker_12c2e742f5306142f1aa21694e4bf4c7.bindPopup(popup_5e38ada291124b7a0c97774370aabc75)
+        ;
+
+        
+    
+    
+            var marker_cc926d3563d419ae37d8b0b954f1762f = L.marker(
+                [4.813982, 6.955521],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_0622d95484042ac99ac1ee4cbd91289f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cc926d3563d419ae37d8b0b954f1762f.setIcon(icon_0622d95484042ac99ac1ee4cbd91289f);
+        
+    
+        var popup_31f66deb9627147b85ef3c578832ff59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85590c91b4760827d606f06744933a6c = $(`<div id="html_85590c91b4760827d606f06744933a6c" style="width: 100.0%; height: 100.0%;">Closest Unit 2: RIVERS (Distance: 0.19 km)</div>`)[0];
+                popup_31f66deb9627147b85ef3c578832ff59.setContent(html_85590c91b4760827d606f06744933a6c);
+            
+        
+
+        marker_cc926d3563d419ae37d8b0b954f1762f.bindPopup(popup_31f66deb9627147b85ef3c578832ff59)
+        ;
+
+        
+    
+    
+            var marker_5595a7f155ef616d337f2aa9aa9695a0 = L.marker(
+                [4.81536, 6.957032],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_fd5791f760a13a186bd78c6552072d31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5595a7f155ef616d337f2aa9aa9695a0.setIcon(icon_fd5791f760a13a186bd78c6552072d31);
+        
+    
+        var popup_a56ffbdb3b34486105fab65c109c8206 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_642ce3a0f55da30f9ffc3cce50a9d488 = $(`<div id="html_642ce3a0f55da30f9ffc3cce50a9d488" style="width: 100.0%; height: 100.0%;">Closest Unit 3: RIVERS (Distance: 0.22 km)</div>`)[0];
+                popup_a56ffbdb3b34486105fab65c109c8206.setContent(html_642ce3a0f55da30f9ffc3cce50a9d488);
+            
+        
+
+        marker_5595a7f155ef616d337f2aa9aa9695a0.bindPopup(popup_a56ffbdb3b34486105fab65c109c8206)
+        ;
+
+        
+    
+    
+            var marker_dcb6a5fb5b65ee67f0072d5f24d50d56 = L.marker(
+                [4.790538, 6.987622],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_d28662895c0656b52cbfcbc359e25fac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dcb6a5fb5b65ee67f0072d5f24d50d56.setIcon(icon_d28662895c0656b52cbfcbc359e25fac);
+        
+    
+        var popup_cd6a5d7bb76ceb4a992156415a2cf7c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_694d6068fa1c7971cc383ff8775035a0 = $(`<div id="html_694d6068fa1c7971cc383ff8775035a0" style="width: 100.0%; height: 100.0%;">NNPP Outlier: 32-22-17-008 (Score: 22.5539547)</div>`)[0];
+                popup_cd6a5d7bb76ceb4a992156415a2cf7c9.setContent(html_694d6068fa1c7971cc383ff8775035a0);
+            
+        
+
+        marker_dcb6a5fb5b65ee67f0072d5f24d50d56.bindPopup(popup_cd6a5d7bb76ceb4a992156415a2cf7c9)
+        ;
+
+        
+    
+    
+            var marker_ad7f53060f53175353ab7070259f56c2 = L.marker(
+                [4.792133, 6.989944],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_6a33d9e05789b7be106a889b32669809 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad7f53060f53175353ab7070259f56c2.setIcon(icon_6a33d9e05789b7be106a889b32669809);
+        
+    
+        var popup_0fd66a67084f29ae84657da0ec98796c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_207c8da9386440fc133cd913ef45099d = $(`<div id="html_207c8da9386440fc133cd913ef45099d" style="width: 100.0%; height: 100.0%;">Closest Unit 1: RIVERS (Distance: 0.31 km)</div>`)[0];
+                popup_0fd66a67084f29ae84657da0ec98796c.setContent(html_207c8da9386440fc133cd913ef45099d);
+            
+        
+
+        marker_ad7f53060f53175353ab7070259f56c2.bindPopup(popup_0fd66a67084f29ae84657da0ec98796c)
+        ;
+
+        
+    
+    
+            var marker_fc24b928b90a95086b9b00cd8a17410d = L.marker(
+                [4.792133, 6.989944],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_7ac8c81e63063cc90dae6e2c80733273 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc24b928b90a95086b9b00cd8a17410d.setIcon(icon_7ac8c81e63063cc90dae6e2c80733273);
+        
+    
+        var popup_6a69c371852f84cd5031fc245c36db66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d356b1c457005668426b809659a1407 = $(`<div id="html_7d356b1c457005668426b809659a1407" style="width: 100.0%; height: 100.0%;">Closest Unit 2: RIVERS (Distance: 0.31 km)</div>`)[0];
+                popup_6a69c371852f84cd5031fc245c36db66.setContent(html_7d356b1c457005668426b809659a1407);
+            
+        
+
+        marker_fc24b928b90a95086b9b00cd8a17410d.bindPopup(popup_6a69c371852f84cd5031fc245c36db66)
+        ;
+
+        
+    
+    
+            var marker_0271ee7b2d4865cc12646b3e7700e8c8 = L.marker(
+                [4.791001, 6.990475],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_5e3ee8c434d714736ce5684301ab42c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0271ee7b2d4865cc12646b3e7700e8c8.setIcon(icon_5e3ee8c434d714736ce5684301ab42c3);
+        
+    
+        var popup_de922301f74adbe7c9a3f253e5566a51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2259b4a23e793b112b5dc4674c56ca8 = $(`<div id="html_c2259b4a23e793b112b5dc4674c56ca8" style="width: 100.0%; height: 100.0%;">Closest Unit 3: RIVERS (Distance: 0.32 km)</div>`)[0];
+                popup_de922301f74adbe7c9a3f253e5566a51.setContent(html_c2259b4a23e793b112b5dc4674c56ca8);
+            
+        
+
+        marker_0271ee7b2d4865cc12646b3e7700e8c8.bindPopup(popup_de922301f74adbe7c9a3f253e5566a51)
+        ;
+
+        
+    
+    
+            var marker_71a497821db5dabad990cc81858edb48 = L.marker(
+                [4.886862, 7.12517],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_d34ae2d5d6ab05b87f4425cc6f043f25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_71a497821db5dabad990cc81858edb48.setIcon(icon_d34ae2d5d6ab05b87f4425cc6f043f25);
+        
+    
+        var popup_1222b67c223d99bea5b61adaca64c65a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c949b8a749acc97e7129dd054a5471f0 = $(`<div id="html_c949b8a749acc97e7129dd054a5471f0" style="width: 100.0%; height: 100.0%;">NNPP Outlier: 32-21-10-007 (Score: 12.24800794)</div>`)[0];
+                popup_1222b67c223d99bea5b61adaca64c65a.setContent(html_c949b8a749acc97e7129dd054a5471f0);
+            
+        
+
+        marker_71a497821db5dabad990cc81858edb48.bindPopup(popup_1222b67c223d99bea5b61adaca64c65a)
+        ;
+
+        
+    
+    
+            var marker_5aa2f016642826ae525d112921b35215 = L.marker(
+                [4.886244, 7.125491],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_25900006f1e49158dd6591a7a771a5f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5aa2f016642826ae525d112921b35215.setIcon(icon_25900006f1e49158dd6591a7a771a5f2);
+        
+    
+        var popup_c22435bb7434e285d5e596452e22b461 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_997195958ddeeb4a22ab3238b539cdee = $(`<div id="html_997195958ddeeb4a22ab3238b539cdee" style="width: 100.0%; height: 100.0%;">Closest Unit 1: RIVERS (Distance: 0.08 km)</div>`)[0];
+                popup_c22435bb7434e285d5e596452e22b461.setContent(html_997195958ddeeb4a22ab3238b539cdee);
+            
+        
+
+        marker_5aa2f016642826ae525d112921b35215.bindPopup(popup_c22435bb7434e285d5e596452e22b461)
+        ;
+
+        
+    
+    
+            var marker_a71bdbb1caf39dac6c3e1b066719b89c = L.marker(
+                [4.883556, 7.118789],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_c1f998fe91a537ca64e981cf5f58fdc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a71bdbb1caf39dac6c3e1b066719b89c.setIcon(icon_c1f998fe91a537ca64e981cf5f58fdc5);
+        
+    
+        var popup_894b5cc4fef91ed88143b071a64ae43a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1fe6502b678f6d471a36661f9f786ff = $(`<div id="html_a1fe6502b678f6d471a36661f9f786ff" style="width: 100.0%; height: 100.0%;">Closest Unit 2: RIVERS (Distance: 0.80 km)</div>`)[0];
+                popup_894b5cc4fef91ed88143b071a64ae43a.setContent(html_a1fe6502b678f6d471a36661f9f786ff);
+            
+        
+
+        marker_a71bdbb1caf39dac6c3e1b066719b89c.bindPopup(popup_894b5cc4fef91ed88143b071a64ae43a)
+        ;
+
+        
+    
+    
+            var marker_2ba4bac61919429a55bf0912010681db = L.marker(
+                [4.881335, 7.13161],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_57ee2a8397357e530be2ea128c46054b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2ba4bac61919429a55bf0912010681db.setIcon(icon_57ee2a8397357e530be2ea128c46054b);
+        
+    
+        var popup_8736a4fffb75adbdc12e9c4e08faf5a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5eae601bde0994beaed4cdd2ed41fa76 = $(`<div id="html_5eae601bde0994beaed4cdd2ed41fa76" style="width: 100.0%; height: 100.0%;">Closest Unit 3: RIVERS (Distance: 0.94 km)</div>`)[0];
+                popup_8736a4fffb75adbdc12e9c4e08faf5a2.setContent(html_5eae601bde0994beaed4cdd2ed41fa76);
+            
+        
+
+        marker_2ba4bac61919429a55bf0912010681db.bindPopup(popup_8736a4fffb75adbdc12e9c4e08faf5a2)
+        ;
+
+        
+    
+    
+            var marker_421773347b8699eda910d1db182466a2 = L.marker(
+                [4.743216, 7.082116],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_8f9ad4e6a1f40ff322838e5916773c47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_421773347b8699eda910d1db182466a2.setIcon(icon_8f9ad4e6a1f40ff322838e5916773c47);
+        
+    
+        var popup_e4d7c998bf6245ca18b9c88795557f6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67313b0092df76b65cb0c4968bcf1ed1 = $(`<div id="html_67313b0092df76b65cb0c4968bcf1ed1" style="width: 100.0%; height: 100.0%;">NNPP Outlier: 32-22-20-028 (Score: 11.20655189)</div>`)[0];
+                popup_e4d7c998bf6245ca18b9c88795557f6a.setContent(html_67313b0092df76b65cb0c4968bcf1ed1);
+            
+        
+
+        marker_421773347b8699eda910d1db182466a2.bindPopup(popup_e4d7c998bf6245ca18b9c88795557f6a)
+        ;
+
+        
+    
+    
+            var marker_432660ce3c26e221aa2e9c6a63a1bce9 = L.marker(
+                [4.740619, 7.084806],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_9aba0e1cbacc852c61e508ddd60ce828 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_432660ce3c26e221aa2e9c6a63a1bce9.setIcon(icon_9aba0e1cbacc852c61e508ddd60ce828);
+        
+    
+        var popup_abdb6d186f72987a0781f2543d988469 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ef302bac130033f44f572734ca2ef82 = $(`<div id="html_0ef302bac130033f44f572734ca2ef82" style="width: 100.0%; height: 100.0%;">Closest Unit 1: RIVERS (Distance: 0.41 km)</div>`)[0];
+                popup_abdb6d186f72987a0781f2543d988469.setContent(html_0ef302bac130033f44f572734ca2ef82);
+            
+        
+
+        marker_432660ce3c26e221aa2e9c6a63a1bce9.bindPopup(popup_abdb6d186f72987a0781f2543d988469)
+        ;
+
+        
+    
+    
+            var marker_47cc304e7bf5a2bff065b84972be4626 = L.marker(
+                [4.740619, 7.084806],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_38f47ab237f1257e0947e199d675a998 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_47cc304e7bf5a2bff065b84972be4626.setIcon(icon_38f47ab237f1257e0947e199d675a998);
+        
+    
+        var popup_01ea3a4dcfaad271d5ae4211819ffbfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d38efacd71bfcd28075b78f5597cc707 = $(`<div id="html_d38efacd71bfcd28075b78f5597cc707" style="width: 100.0%; height: 100.0%;">Closest Unit 2: RIVERS (Distance: 0.41 km)</div>`)[0];
+                popup_01ea3a4dcfaad271d5ae4211819ffbfb.setContent(html_d38efacd71bfcd28075b78f5597cc707);
+            
+        
+
+        marker_47cc304e7bf5a2bff065b84972be4626.bindPopup(popup_01ea3a4dcfaad271d5ae4211819ffbfb)
+        ;
+
+        
+    
+    
+            var marker_85542784632e6cf1202979ed4e61a737 = L.marker(
+                [4.740619, 7.084806],
+                {}
+            ).addTo(map_85a0a0454695730d9d5be7e632fb6161);
+        
+    
+            var icon_2e0f689f0710be5d7775a29158d0d08a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_85542784632e6cf1202979ed4e61a737.setIcon(icon_2e0f689f0710be5d7775a29158d0d08a);
+        
+    
+        var popup_1b1c57747d6c4ab0c7862dd62cac5ee4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5e0b75d4a3c08b938cfeeb725034992 = $(`<div id="html_d5e0b75d4a3c08b938cfeeb725034992" style="width: 100.0%; height: 100.0%;">Closest Unit 3: RIVERS (Distance: 0.41 km)</div>`)[0];
+                popup_1b1c57747d6c4ab0c7862dd62cac5ee4.setContent(html_d5e0b75d4a3c08b938cfeeb725034992);
+            
+        
+
+        marker_85542784632e6cf1202979ed4e61a737.bindPopup(popup_1b1c57747d6c4ab0c7862dd62cac5ee4)
+        ;
+
+        
+    
+</script>
+</html>
