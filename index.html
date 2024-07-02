@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNG 11: Outlier Detection in Election Data Using Geospatial Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-top: 16px;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+        ul {
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .summary {
+            background-color: #f9f9f9;
+            padding: 12px;
+            border-left: 4px solid #ccc;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HNG 11: Outlier Detection in Election Data Using Geospatial Analysis</h1>
+            <h2>OTUENE HEPHZIBAH REGINALD</h2>
+            <img src="DSC_9345.jpg" alt="me">
+        </header>
+        
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>In the aftermath of a contentious election, concerns over the accuracy and integrity of voting results have surfaced, prompting a rigorous investigation by the Independent National Electoral Commission (INEC). Allegations of vote manipulation and irregularities have underscored the need for a comprehensive analysis to uncover potential anomalies and ensure transparency in electoral outcomes. This report focuses on employing geospatial analysis techniques to identify outlier polling units where voting patterns deviate significantly from their neighboring units.</p>
+        </section>
+        
+        <section id="methodology">
+            <h2>Methodology</h2>
+            
+            <h3>1. Data Collection and Cleaning</h3>
+            <ul>
+                <li>Polling unit data, including latitude and longitude coordinates, were sourced from a provided dataset. Geocoding was conducted using Google Sheets via Awesome Table to augment the dataset with accurate geospatial information.</li>
+                <li>The dataset was meticulously cleaned to ensure completeness and accuracy, eliminating any inconsistencies that could affect subsequent analyses.</li>
+            </ul>
+            
+            <h3>2. Outlier Detection Using Python on Jupyter Notebook</h3>
+            <ul>
+                <li>The Isolation Forest algorithm was applied to detect anomalies in voting patterns exhibited by each political party across polling units.</li>
+                <li>Outlier scores were computed for each polling unit, indicating the degree of deviation from the expected voting behavior based on its features.</li>
+            </ul>
+            
+            <h3>3. Geospatial Analysis</h3>
+            <ul>
+                <li>Distances between polling units were calculated to assess spatial relationships and identify neighboring units.</li>
+                <li>The top three outliers were determined for each political party based on their outlier scores, providing insights into areas with potentially irregular voting behaviors.</li>
+                <li>Closest neighboring polling units to each outlier were identified to contextualize the anomalous voting patterns geospatially.</li>
+            </ul>
+        </section>
+        
+        <section id="summary">
+            <h2>Summary</h2>
+            <div class="summary">
+                <p>The analysis uncovered substantial outliers within polling units associated with each political party. The sorted list of polling units by outlier scores for each party can be found in the accompanying Excel sheet, facilitating a deeper understanding of the electoral landscape.</p>
+                <ul>
+                    <li><strong><a href="https://docs.google.com/spreadsheets/d/1EmhdXzVcyaX3KRu5zFQbjxTKeA4MSQ2cdHEgVRt6NG0/edit?usp=sharing" target="_blank">cleaned_polling_units.csv</a>:</strong> Contains the cleaned dataset with latitude, longitude, and outlier scores for each polling unit.</li>
+                    <li><strong><a href="https://docs.google.com/spreadsheets/d/1xOwv9jdTxms5OkuoKyOkwLOxyUlXqearP1P_aGE2DjE/edit?usp=sharing">sorted_polling_units_by_outlier_scores.xlsx</a>:</strong> Excel sheet presenting polling units sorted by outlier scores for APC, LP, PDP, and NNPP.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>The geospatial analysis and outlier detection provided valuable insights into potential irregularities within the election data:</p>
+            <ol>
+                <li><strong>Identification of Significant Outliers:</strong> Distinct polling units were identified where voting behaviors significantly deviated from their neighboring units, indicating potential irregularities.</li>
+                <li><strong>Analysis of Top Outliers:</strong> The top outliers exhibited voting patterns that were markedly different from their surroundings, highlighting areas warranting further scrutiny and investigation.</li>
+                <li><strong>Spatial Context:</strong> Geospatial visualization and proximity analysis elucidated the spatial distribution of outliers, offering a clear depiction of areas with anomalous voting behaviors.</li>
+            </ol>
+            <p>The visualizations included in this report help illustrate these findings and provide a clear understanding of the spatial distribution of outliers to contribute to the transparency and integrity of electoral processes.</p>
+            <img src="Clusters_and_top_outliers.png" alt="Clusters_and_top_outliers">
+            <img src="mean_std.png" alt="mean_std">
+            <img src="top_outliers_chart.png" alt="top 3 outliers">
+        </section>
+        
+        <footer>
+            <p>This comprehensive approach underscores the importance of geospatial analysis in uncovering potential electoral irregularities and ensuring fair and transparent election outcomes.</p>
+            <p>For additional insights and learning opportunities, check out <a href="https://hng.tech/internship" target="_blank">HNG Internship</a> and <a href="https://hng.tech/premium" target="_blank">HNG Premium</a>.</p>
+            <p>You can access the dataset and further details from my <a href="https://heptuene123098.github.io/Rivers-State-Election/" target="_blank">GitHub</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
